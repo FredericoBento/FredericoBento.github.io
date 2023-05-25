@@ -17,9 +17,62 @@
       color: white !important;
       font-family: 'IBM Plex Mono', monospace;
     }
-    
+
+    .image {
+      position: fixed;
+
+      margin: 0;
+      left: 0%;
+      bottom: 0%;
+
+    }
+
+    .image img {
+      position: fixed;
+      margin: 0;
+      left: 0%;
+      bottom: 0%;
+      animation: skeleton_walking 1s infinite;
+    }
+
+  
+    @keyframes skeleton_walking {
+      0% {
+        transform: translateX(0px);
+        transform: scaleX(1);
+      }
+      50% {
+        transform: translateX(1000px);
+        transform: scaleX(-1);
+      }
+      100% {
+        transform: translateX(0px);
+        transform: scaleX(1);
+      }
+    }
+
+    @keyframes img_tremble {
+      0% {
+        transform: translateX(0px);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+ 
   </style>
   <h1>Frederico Bento!</h1>
   <h2><span class="notfound"> 404 Not Found</span></h2>
+  <div class="image_center">
+    <img src="skeletonEXgif.gif" alt="404" height="300">
+  </div>
+  <!-- <div class="image">
+    <img src="skeleton.png" alt="404" height="300">
+  </div> -->
+  
+
 </body>
 </html>
